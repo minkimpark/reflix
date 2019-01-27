@@ -1,0 +1,18 @@
+<html>
+<body>
+  <div><input type="text" id="search_keyword"></div>
+  <button id="submit">전송</button>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script>
+  $('#submit').click(function(){
+    var search_keyword = $('#search_keyword').val();
+    console.log(search_keyword);
+    $(location).attr('href','/test/view?search_keyword='+search_keyword);
+  })
+
+</script>
+</html>
